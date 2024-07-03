@@ -6,14 +6,25 @@ import badge from '../../assets/badge.png';
 import coin from '../../assets/coin.png';
 import DoctorsOrMoneyCard from "../../components/DoctorsOrMoneyCard";
 import PatientCard from "../../components/PatientCard";
+import SectionTitleAndSubtitle from "../../components/SectionTitleAndSubtitle";
+import BtnPrimary from "../../components/BtnPrimary";
+import aboutUsImage from './../../assets/Rectangle 24.png';
+import service1 from './../../assets/Rectangle 27-2.png';
+import service3 from './../../assets/Rectangle 27.png';
+import service2 from './../../assets/Rectangle 27-1.png';
+import ServiceCard from "../../components/ServiceCard";
 
 const Home = () => {
     return (
         <div>
-            <div>
+
+            {/* banner section  */}
+            <section>
                 <Banner />
-            </div>
-            <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-5 mt-10">
+            </section>
+
+            {/* states section  */}
+            <section className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-5 mt-10">
                 {/* chid 1 */}
                 <div className="order-1 lg:order-none">
                     <SatisfactionOrLessonCard
@@ -63,7 +74,61 @@ const Home = () => {
                         cardImage={video}
                     />
                 </div>
-            </div>
+            </section>
+
+            {/* about us section  */}
+            <section className="mt-28 lg:mt-36 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+                <div>
+                    <SectionTitleAndSubtitle
+                        title="We Help To Get Soultions"
+                        subTitle="Who we are"
+                    />
+                    <p className="mt-4 text-text-secondary mb-11">We are proud to be a trusted healthcare provider in our community, and we look forward to serving you and your family with excellence, integrity, and compassion. Your health is our priority, and we are here for you every step of the way. We believe in treating each patient with dignity, respect, and empathy, ensuring that they receive the attention and care they deserve.
+                    </p>
+                    <BtnPrimary text="Learn more" />
+
+                </div>
+                <div className="relative">
+                    <img className="w-full" src={aboutUsImage} alt="" />
+
+                    {/* badge */}
+                    <div className="bg-[#343268] rounded-[32px] max-w-[400px] py-11 pl-7 pr-4 absolute -bottom-10 left-[50%] -translate-x-[50%] lg:translate-x-0 lg:-left-16">
+                        <h4 className="font-medium text-2xl text-white">Our mission is simple</h4>
+                        <p className="mt-5 text-white ">To provide high-quality healthcare services that are accessible, personalized, and patient-centered.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* services section  */}
+            <section className="mt-28 lg:mt-36 grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10">
+                <div>
+                    <SectionTitleAndSubtitle
+                        title="Empowering Health, Enriching Lives"
+                        subTitle="Service"
+                    />
+                    <p className="mt-4 text-text-secondary mb-11">We are committed to providing high-quality, compassionate care to every patient we serve. Whatever your healthcare needs may be, you can trust us to be your partner in health and wellness.
+                    </p>
+                    <BtnPrimary text="Appointment" />
+
+                </div>
+               
+                    <ServiceCard
+                        image={service1}
+                        title="Advanced Technology"
+                        descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
+                    />
+                    <ServiceCard
+                        image={service2}
+                        title="Online Doctor Meet"
+                        descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
+                    />
+                    <ServiceCard
+                        image={service3}
+                        title="Consultancy your health"
+                        descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
+                    />
+                
+            </section>
         </div>
     );
 };

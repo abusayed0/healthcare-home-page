@@ -3,7 +3,7 @@ import patient from './../assets/patient.jpg';
 
 const PatientCard = () => {
     return (
-        <div className="p-5 rounded-3xl bg-[#F1F1F4] border-[rgba(2,0,67,0.20) border-[0.5px]">
+        <div className="p-5 rounded-3xl  border-[rgba(2,0,67,0.20) border-[0.5px]">
             <div className="flex items-center gap-2">
                 <h3 className="text-[40px] font-semibold text-text-primary">4.8</h3>
                 <img className="w-8" src={star} alt="" />
