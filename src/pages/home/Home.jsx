@@ -12,10 +12,12 @@ import aboutUsImage from './../../assets/Rectangle 24.png';
 import service1 from './../../assets/Rectangle 27-2.png';
 import service3 from './../../assets/Rectangle 27.png';
 import service2 from './../../assets/Rectangle 27-1.png';
+import offerImage from './../../assets/Rectangle 32.png';
 import ServiceCard from "../../components/ServiceCard";
 import TestimonialCard from "../../components/TestimonialCard";
 import patient from './../../assets/patient.jpg';
 import FaqContainer from "../../components/FaqContainer";
+import Offer from "../../components/Offer";
 
 
 const Home = () => {
@@ -172,6 +174,18 @@ const Home = () => {
                     title="Frequntly Asked Question"
                 />
                 <FaqContainer />
+            </section>
+
+            {/* offer section  */}
+            <section className={`mt-28 lg:mt-36 rounded-[32px] px-10 py-20`}
+                style={{
+                    backgroundImage: `radial-gradient(648.07% 142.88% at 98.23% 78.35%, #020043 0%, rgba(2, 0, 67, 0.30) 100%), url(${offerImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            >
+                <Offer />
+
             </section>
         </div>
     );
