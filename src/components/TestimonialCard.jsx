@@ -1,4 +1,4 @@
-
+import star from './../assets/Vector.png';
 const TestimonialCard = ({title, subtitle, authorImage, authorName, authorProfession}) => {
     return (
         <div className="p-5 rounded-2xl bg-[#FFFFF5]">
@@ -8,8 +8,12 @@ const TestimonialCard = ({title, subtitle, authorImage, authorName, authorProfes
                 <img className="size-10 rounded-full" src={authorImage} alt="" />
                 <div className="">
                     <h4 className="text-text-primary text-xs"><span className="font-semibold">{authorName}, </span><span className="font-medium">{authorProfession}</span></h4>
-                    <div className="mt-1">
-                        star
+                    <div className="mt-1 flex gap-1.5 items-center">
+                        <img src={star} alt="" />
+                        <img src={star} alt="" />
+                        <img src={star} alt="" />
+                        <img src={star} alt="" />
+                        <img src={star} alt="" />
                     </div>
                 </div>
             </div>

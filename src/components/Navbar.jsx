@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from './../assets/logo dark.png';
+import arrow1 from './../assets/Arrow 1.png';
 
 const Navbar = ({ rightNavOpen, setRightNavOpen }) => {
     return (
@@ -31,7 +32,7 @@ const Navbar = ({ rightNavOpen, setRightNavOpen }) => {
 
                     </ul>
                     <div>
-                        <button className="px-7 py-4 font-medium  border border-text-primary text-text-primary rounded-xl">Appointment</button>
+                        <button className="px-7 py-4 font-medium  border border-text-primary text-text-primary rounded-xl flex items-center gap-2">Appointment <img src={arrow1} alt="" /></button>
                     </div>
                 </div>
                 {/* small navbar  */}

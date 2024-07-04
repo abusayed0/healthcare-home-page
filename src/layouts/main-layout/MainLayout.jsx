@@ -9,7 +9,7 @@ const MainLayout = () => {
 
     return (
         <>
-            <div className="max-w-[1160px] mx-auto relative">
+            <div className=" relative">
             <Navbar rightNavOpen={rightNavOpen} setRightNavOpen={setRightNavOpen}/>
             <RightSidebar rightNavOpen={rightNavOpen} setRightNavOpen={setRightNavOpen}/>
                 <Outlet />

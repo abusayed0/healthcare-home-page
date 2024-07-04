@@ -15,6 +15,7 @@ import service2 from './../../assets/Rectangle 27-1.png';
 import ServiceCard from "../../components/ServiceCard";
 import TestimonialCard from "../../components/TestimonialCard";
 import patient from './../../assets/patient.jpg';
+import FaqContainer from "../../components/FaqContainer";
 
 
 const Home = () => {
@@ -114,23 +115,23 @@ const Home = () => {
                     <BtnPrimary text="Appointment" />
 
                 </div>
-               
-                    <ServiceCard
-                        image={service1}
-                        title="Advanced Technology"
-                        descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
-                    />
-                    <ServiceCard
-                        image={service2}
-                        title="Online Doctor Meet"
-                        descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
-                    />
-                    <ServiceCard
-                        image={service3}
-                        title="Consultancy your health"
-                        descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
-                    />
-                
+
+                <ServiceCard
+                    image={service1}
+                    title="Advanced Technology"
+                    descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
+                />
+                <ServiceCard
+                    image={service2}
+                    title="Online Doctor Meet"
+                    descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
+                />
+                <ServiceCard
+                    image={service3}
+                    title="Consultancy your health"
+                    descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
+                />
+
             </section>
 
             {/* testimonial section  */}
@@ -164,14 +165,13 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Faq section  */}
             <section className="mt-28 lg:mt-36">
                 <SectionTitleAndSubtitle
-                    subTitle="FAQ"
+                    subTitle="Faq"
                     title="Frequntly Asked Question"
                 />
-                <div className="mt-7">
-
-                </div>
+                <FaqContainer />
             </section>
         </div>
     );
