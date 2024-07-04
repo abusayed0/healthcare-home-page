@@ -13,6 +13,9 @@ import service1 from './../../assets/Rectangle 27-2.png';
 import service3 from './../../assets/Rectangle 27.png';
 import service2 from './../../assets/Rectangle 27-1.png';
 import ServiceCard from "../../components/ServiceCard";
+import TestimonialCard from "../../components/TestimonialCard";
+import patient from './../../assets/patient.jpg';
+
 
 const Home = () => {
     return (
@@ -100,7 +103,7 @@ const Home = () => {
             </section>
 
             {/* services section  */}
-            <section className="mt-28 lg:mt-36 grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10">
+            <section className="mt-28 lg:mt-36 grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 p-5 md:p-10 bg-[#FFFFF5] rounded-[32px]">
                 <div>
                     <SectionTitleAndSubtitle
                         title="Empowering Health, Enriching Lives"
@@ -128,6 +131,47 @@ const Home = () => {
                         descrip="Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision"
                     />
                 
+            </section>
+
+            {/* testimonial section  */}
+            <section className="mt-28 lg:mt-36">
+                <SectionTitleAndSubtitle
+                    subTitle="Testimonial"
+                    title="What they say about us"
+                />
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <TestimonialCard
+                        title="Expertise and Compassion Combined"
+                        subtitle="I can't thank enough for their exceptional care. The doctors and staff showed incredible expertise and compassion throughout my treatment journey. I felt truly cared for every step of the way."
+                        authorImage={patient}
+                        authorName="Sarah D"
+                        authorProfession="IT Professional"
+                    />
+                    <TestimonialCard
+                        title="Life-Saving Care, Life-Changing Experience"
+                        subtitle="My experience at [Healthcare Provider Name] was life-changing. The prompt and accurate diagnosis, coupled with the advanced treatments they provided, saved my life."
+                        authorImage={patient}
+                        authorName="Michael R"
+                        authorProfession="Business Executive"
+                    />
+                    <TestimonialCard
+                        title="A Partner in Health and Wellness"
+                        subtitle="As a busy professional, I appreciate the convenience and quality of care I receive at [Healthcare Provider Name]. From telemedicine consultations to routine check-ups, they've become my trusted partner in health and"
+                        authorImage={patient}
+                        authorName="David S"
+                        authorProfession="Lawyer"
+                    />
+                </div>
+            </section>
+
+            <section className="mt-28 lg:mt-36">
+                <SectionTitleAndSubtitle
+                    subTitle="FAQ"
+                    title="Frequntly Asked Question"
+                />
+                <div className="mt-7">
+
+                </div>
             </section>
         </div>
     );

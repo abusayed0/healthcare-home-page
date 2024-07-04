@@ -5,7 +5,7 @@ import logo from './../assets/logo dark.png';
 const Navbar = ({ rightNavOpen, setRightNavOpen }) => {
     return (
         <>
-            <nav className="my-10">
+            <nav className="py-10">
                 {/* medium and large navbar  */}
                 <div className="hidden md:flex justify-between items-center ">
                     <div>
@@ -16,15 +16,15 @@ const Navbar = ({ rightNavOpen, setRightNavOpen }) => {
                             <NavLink to="/" className="text-text-primary">Home</NavLink>
                         </li>
                         <li className="relative">
-                            <NavLink to="/services" className="text-text-primary">Services</NavLink>
+                            <NavLink to="/" className="text-text-primary">Services</NavLink>
 
                         </li>
                         <li className="relative">
-                            <NavLink to="/blog" className="text-text-primary">Blog</NavLink>
+                            <NavLink to="/" className="text-text-primary">Blog</NavLink>
 
                         </li>
                         <li className="relative">
-                            <NavLink to="/about-us" className="text-text-primary">About Us</NavLink>
+                            <NavLink to="/" className="text-text-primary">About Us</NavLink>
 
                         </li>
 

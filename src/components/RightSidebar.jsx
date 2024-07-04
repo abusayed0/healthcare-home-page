@@ -15,15 +15,15 @@ const RightSidebar = ({ rightNavOpen, setRightNavOpen }) => {
                         <NavLink to="/" className="text-text-primary">Home</NavLink>
                     </li>
                     <li className="relative">
-                        <NavLink to="/services" className="text-text-primary">Services</NavLink>
+                        <NavLink to="/" className="text-text-primary">Services</NavLink>
 
                     </li>
                     <li className="relative">
-                        <NavLink to="/blog" className="text-text-primary">Blog</NavLink>
+                        <NavLink to="/" className="text-text-primary">Blog</NavLink>
 
                     </li>
                     <li className="relative">
-                        <NavLink to="/about-us" className="text-text-primary">About Us</NavLink>
+                        <NavLink to="/" className="text-text-primary">About Us</NavLink>
 
                     </li>
                     <li>
